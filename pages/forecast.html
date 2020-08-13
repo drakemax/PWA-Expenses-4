@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Ninja</title>
+    <!-- materialize icons, css & js -->
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" href="/css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="theme-color" content="#FFE1C4">
+</head>
+
+<body class="grey lighten-4">
+
+    <!-- top nav -->
+    <nav class="z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="/">Max<span>Expenses</span></a>
+            <span class="right grey-text text-darken-1">
+                <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- side nav -->
+    <ul id="side-menu" class="sidenav side-menu">
+        <li><a class="subheader">Expenses</a></li>
+        <li><a href="/" class="waves-effect">Home</a></li>
+        <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="/pages/contact.html" class="waves-effect">
+                <i class="material-icons">mail_outline</i>Contact</a>
+        </li>
+    </ul>
+
+    <!-- content -->
+    <div class="center">
+        <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+
+    <div class="container grey-text">
+
+        <h5 class="center">Forecasr</h5>
+        <p>This is forcast expence for month
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus omnis, ea doloremque
+            exercitationem id necessitatibus. Voluptatem officiis cupiditate commodi totam, hic laborum est ducimus amet
+            iure,
+            non dignissimos illo.</p>
+    </div>
+    <!-- add expenses side nav -->
+    <div id="side-form" class="sidenav side-form">
+        <form class="add-expense container section">
+            <h6>New Expense</h6>
+            <div class="divider"></div>
+            <div class="input-field center">
+                <button class="btn-small">Add Expense</button>
+            </div>
+            <div class="input-field">
+                <input placeholder=50 id="sum" type="number" min="0" step=".01" class="validate">
+                <label for="sum">Expense Sum</label>
+            </div>
+            <div class="input-field col s12">
+
+                <label>Shop Select</label>
+                <select multiple id="shop" class="browser-default">
+                    <option value="" disabled selected>Choose Shop</option>
+                    <option value="Other">Other</option>
+                    <option value="Pak'n'Save-🛒">Pak'n'Save-🛒</option>
+                    <option value="Paua Electricity-💡">Paua Electricity-💡</option>
+                    <option value="Warehouse Mobile-📱">Warehouse Mobile-📱</option>
+                    <option value="Stuff Fibre-💻">Stuff Fibre-💻</option>
+                    <option value="Vege Market-🥕">Vege Market-🥕</option>
+                    <option value="The Warehouse-🛍️">The Warehouse-🛍️</option>
+                    <option value="Countdown-🛒 ">Countdown-🛒 </option>
+                    <option value="New World-🛒">New World-🛒</option>
+                    <option value="Uncle Bills-🛍️">Uncle Bills-🛍️</option>
+                    <option value="123Mart-🛍️">123Mart-🛍️</option>
+                    <option value="Life Pharmacy-⚕️">Life Pharmacy-⚕️</option>
+                    <option value="Hataitai Medical-⚕️">Hataitai Medical-⚕️</option>
+                    <option value="Contabo-💻">Contabo-💻</option>
+                    <option value="ASB-💰">ASB-💰</option>
+                    <option value="Moore Wilson-🛒">Moore Wilson-🛒</option>
+                    <option value="Asian food kilbirnie-🛒">Asian food kilbirnie-🛒</option>
+                    <option value="Brew House-🍺">Brew House-</option>
+                    <option value="BP Connect-⛽">BP Connect</option>
+                    <option value="Placemakers-🔨">Placemakers-🔨</option>
+                    <option value="Bunnings-🔨">Bunnings-🔨</option>
+                    <option value="WCC-🌆 ">WCC-🌆 </option>
+                    <option value="Scooterazzi-🏍️">Scooterazzi-🏍️</option>
+                    <div class="input-field col s12">
+                </select>
+            </div>
+            <div class="1">
+                <label>Category Select</label>
+                <select id="category" class="browser-default">
+                    <option value="" disabled selected>Choose Category</option>
+                    <option value="🍲-Food">🍲-Food</option>
+                    <option value="🏠-House">🏠-House</option>
+                    <option value="💾-Tech">💾-Tech</option>
+                    <option value="⚕️-Health">⚕️-Health</option>
+                    <option value="🚙-Vehicle">🚙-Vehicle</option>
+                    <option value="🏺-Other">🏺-Other</option>
+                </select>
+            </div>
+            <div class="1">
+                <label>Account Select</label>
+                <select id="account" class="browser-default">
+                    <option value="" disabled selected>Choose Account</option>
+                    <option value="Visa 1-💳">Visa 1-💳</option>
+                    <option value="Orbit-💰">Orbit-💰</option>
+                    <option value="Visa 2-💳">Visa 2-💳</option>
+                    <option value="Cash-💸">Cash-💸</option>
+                </select>
+            </div>
+            <div class="1">
+                <label>Billable Select</label>
+                <select id="billable" class="browser-default">
+                    <option value="" disabled selected>Choose Billing</option>
+                    <option value="Yes-👍">Yes👍</option>
+                    <option value="No-👎">No-👎</option>
+                    <option value="Part-👐">Part-👐</option>
+                    <option value="House-🏡">House-🏡</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <input placeholder="e.g. shopping" id="comment" type="text" class="validate">
+                <label for="comment">Comment on Expenses</label>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/db.js"></script>
+    <script src="/js/ui.js"></script>
+</body>
+
+</html>
